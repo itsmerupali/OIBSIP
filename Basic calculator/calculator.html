@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <script src="calculator.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="calculator.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="Main">
+        <input type="text" placeholder="00" id="inputBox">
+        <div>
+            <button class="operator" onclick="clear()">Clear</button>
+            <button class="operator" onclick="del()">Del</button>
+            <button class="operator" onclick="solve('%')">%</button>
+            <button class="operator" onclick="solve('/')">/</button>
+        </div>
+        <div>
+            <button onclick="solve('7')">7</button>
+            <button onclick="solve('8')">8</button>
+            <button onclick="solve('9')">9</button>
+            <button onclick="solve('*')" class="operator">*</button>
+        </div>
+        <div>
+            <button onclick="solve('4')">4</button>
+            <button onclick="solve('5')">5</button>
+            <button onclick="solve('6')">6</button>
+            <button onclick="solve('-')" class="operator">-</button>
+        </div>
+        <div>
+            <button onclick="solve('1')">1 </button>
+            <button onclick="solve('2')">2 </button>
+            <button onclick="solve('3')">3 </button>
+            <button onclick="solve('+')" class="operator">+</button>
+        </div>
+        <div>
+
+            <button onclick="solve('0')">0</button>
+            <button onclick="solve('.')">.</button>
+            <button onclick="result()" class="equal">=</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

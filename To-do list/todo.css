@@ -1,0 +1,94 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: green;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+.create {
+    border-radius: 50%;
+    font-size: 45px;
+    margin: 15px;
+    background-color: rgb(226, 199, 101);
+    float: left;
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+
+.create:hover {
+    border: 3px solid rgb(204, 137, 65);
+}
+
+button {
+    border: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    margin: 25px;
+
+}
+
+.web {
+    width: 100%;
+    max-width: 780px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 20px 20px 50px 10px rgb(15, 9, 44);
+    margin: 15px;
+}
+
+.item input[type="checkbox"] {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.item input[type="text"] {
+    font-size: 25px;
+    background: none;
+    color: white;
+    flex: 1 1 0%;
+    margin-right: 1rem;
+    font-family: 'Caveat', cursive;
+
+}
+
+.item input[type="text"]:not(:disabled) {
+
+    border-bottom: 3px solid white;
+}
+
+.item.complete {
+    text-decoration: line-through;
+}
+
+.item:hover {
+    border: 3px solid white;
+}
+
+.operators button {
+    opacity: 0.7;
+}
